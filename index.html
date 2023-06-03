@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Schedulizer</h1>
+        <h2>Create a schedule super easily</h2>
+    </header>
+    <main>
+        <div class="schedule-maker">
+            <form>
+                <label for="description">Description: </label>
+                <textarea name="description" id="description" cols="40" rows="4" placeholder="Description here..." required minlength="1"></textarea>
+
+                <label for="day">Day: </label>
+                <select name="day" id="day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+
+                <label for="startTime">Start Time</label>
+                <input type="time" name="statTime" id="startTime" required>
+
+                <label for="endTime">End Time</label>
+                <input type="time" name="endTime" id="endTime" required>
+
+                <button type="submit" id="schedule-submit">Create Entry</button>
+            </form>
+        </div>
+
+        <div class="cur-schedule">
+            <h2>Here is your current schedule</h2>
+            <div class="schedule-days">
+                <div id="monday">
+                    <h3>Monday:</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Time: </th>
+                                <th>Description: </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+                <div id="tuesday">
+                    <h3>Tuesday:</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Time: </th>
+                                <th>Description: </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="wednesday">
+                    <h3>Wednesday:</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Time: </th>
+                                <th>Description: </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="thursday">
+                    <h3>Thursday:</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Time: </th>
+                                <th>Description: </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="friday">
+                    <h3>Friday:</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Time: </th>
+                                <th>Description: </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="saturday">
+                    <h3>Saturday:</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Time: </th>
+                                <th>Description: </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="sunday">
+                    <h3>Sunday:</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Time: </th>
+                                <th>Description: </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="schedule.js"></script>
+    <footer>
+        <p>&copy;All rights owned by ManojWeb</p>
+    </footer>
+</body>
+</html>
